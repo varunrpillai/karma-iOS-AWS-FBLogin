@@ -1,6 +1,6 @@
 # karma-iOS-AWS-FBLogin
 
-### karma is a self initiated 3 day(2 day design+coding and 1 day testing + clean up + release) hackathon project. This project demonstrates my knowledge related to Objective-C coding, handling storyboard changes, Model-View-Controller, learning new technologies and integrating it with the project like Amazon Web Services (AWS) - Dynamo DB(NoSql DB) , Facebook login Service etc. Also, I had to write few lines of swift code for AWS support and made those methods called from objective-C . 
+#### karma is a self initiated 3 day(2 day design+coding and 1 day testing + clean up + release) hackathon project. This project demonstrates my knowledge related to Objective-C coding, handling storyboard changes, Model-View-Controller, learning new technologies and integrating it with the project like Amazon Web Services (AWS) - Dynamo DB(NoSql DB) , Facebook login Service etc. Also, I had to write few lines of swift code for AWS support and made those methods called from objective-C . 
 
 
 Karma app is indeed meant to be a simple app but it has some features which makes it unique and others existing apps does not provide. The purpose of this app are  
