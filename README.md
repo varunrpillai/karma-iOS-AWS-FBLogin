@@ -10,6 +10,7 @@ Karma app is indeed meant to be a simple app but it has some features which make
 ** The app also provides a login using facebook.  
 ** I have similar app in Android since 2015 - https://github.com/varunrpillai/karma  
 
+** This project does not work rightaway. Many of the configuration files have been removed for the sake of privacy. Contact me if you need some help in setting it up.
 
 ## Screenshots
 
