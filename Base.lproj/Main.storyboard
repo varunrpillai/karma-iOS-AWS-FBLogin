@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wmC-R0-dFY">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Karmam-->
+        <scene sceneID="Ndl-2H-GsS">
+            <objects>
+                <tableViewController id="LoU-59-y06" customClass="KarmaTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TRy-d5-DNt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" showsReorderControl="YES" indentationWidth="10" reuseIdentifier="KarmaListCell" textLabel="x3F-EU-0Ug" style="IBUITableViewCellStyleDefault" id="lYE-x1-lrK">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lYE-x1-lrK" id="huh-nG-7MP">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x3F-EU-0Ug">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Title">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="LoU-59-y06" id="L5r-IZ-Crj"/>
+                            <outlet property="delegate" destination="LoU-59-y06" id="Rp7-O0-bQ9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Karmam" id="da0-wZ-j5K">
+                        <barButtonItem key="leftBarButtonItem" title="Sync" id="Uga-IQ-UhU">
+                            <connections>
+                                <segue destination="4Wl-b9-DTv" kind="presentation" id="Fjp-Um-Ukh"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="4u1-Ax-Rnv">
+                                <connections>
+                                    <segue destination="076-5N-xaG" kind="presentation" id="l5J-ha-x21"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Edit" id="ahg-by-iJi">
+                                <connections>
+                                    <action selector="editPressed:" destination="LoU-59-y06" id="c8y-Kr-Qt6"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="4u1-Ax-Rnv" id="n7k-Uf-lxa"/>
+                        <outlet property="editButton" destination="ahg-by-iJi" id="kIR-Z9-G54"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ayM-6N-vB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-405.79710144927537" y="160.59782608695653"/>
+        </scene>
+        <!--Add Your Karma-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AddKarmaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Karma" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="URV-gM-4Ei">
+                                <rect key="frame" x="20" y="353" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="URV-gM-4Ei" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="090-hx-QYK"/>
+                            <constraint firstItem="URV-gM-4Ei" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Dmy-mN-hSG"/>
+                            <constraint firstItem="URV-gM-4Ei" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tFl-ff-4ci"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Your Karma" id="iD4-SK-av7">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nZ5-nT-j2w">
+                            <connections>
+                                <action selector="unwindToKarmaList:" destination="Q3X-S1-O8R" id="IiT-5A-R0q"/>
+                                <segue destination="Q3X-S1-O8R" kind="unwind" unwindAction="unwindToKarmaList:" id="VWb-Dd-5UA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="R3u-Ye-LFx">
+                            <connections>
+                                <segue destination="Q3X-S1-O8R" kind="unwind" unwindAction="unwindToKarmaList:" id="MG0-f7-tjR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="saveButton" destination="R3u-Ye-LFx" id="oM8-0c-ybu"/>
+                        <outlet property="textField" destination="URV-gM-4Ei" id="u7R-w0-gWN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="Q3X-S1-O8R" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="753.62318840579712" y="132.88043478260872"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Tn-33-dxM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wmC-R0-dFY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7mv-T0-RgT">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LoU-59-y06" kind="relationship" relationship="rootViewController" id="GdJ-CW-QAN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9tY-ye-j20" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-713.04347826086962" y="160.59782608695653"/>
+        </scene>
+        <!--Sync to Cloud-->
+        <scene sceneID="GZp-fC-alD">
+            <objects>
+                <viewController id="N6B-oc-XsO" customClass="CloudSyncViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EVJ-8P-JWV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HNz-yo-Z36">
+                                <rect key="frame" x="20" y="102" width="374" height="135"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">You can save all of your karmas in the cloud. Please login to Facebook to store the Karmas or retrieve your saved Karmas. This allows you to continue using this app from any iOS device. If you want to stop saving to cloud, you can logout anytime.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HNz-yo-Z36" firstAttribute="trailing" secondItem="EVJ-8P-JWV" secondAttribute="trailingMargin" id="1Hg-ps-ow1"/>
+                            <constraint firstItem="HNz-yo-Z36" firstAttribute="leading" secondItem="EVJ-8P-JWV" secondAttribute="leadingMargin" id="3Nw-Q0-ufj"/>
+                            <constraint firstItem="vRK-do-yM2" firstAttribute="bottom" secondItem="HNz-yo-Z36" secondAttribute="bottom" constant="450" id="VKa-th-q9S"/>
+                            <constraint firstItem="HNz-yo-Z36" firstAttribute="top" secondItem="vRK-do-yM2" secondAttribute="top" constant="38" id="nyU-np-UBf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vRK-do-yM2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sync to Cloud" id="k6a-Z6-FTQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="r2P-cl-Hes">
+                            <connections>
+                                <segue destination="6hV-aF-GbW" kind="unwind" unwindAction="unwindToKarmaList:" id="gTG-Am-S8m"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggN-iQ-wtF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6hV-aF-GbW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="686.95652173913049" y="886.14130434782612"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mIk-pu-lGL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="076-5N-xaG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b1y-jv-cNk">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gah-oc-Aq1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2e-7I-yh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446.37681159420293" y="132.88043478260872"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="QXy-zg-sBR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Wl-b9-DTv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="N4L-LV-Rgq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DKm-yX-BSW">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N6B-oc-XsO" kind="relationship" relationship="rootViewController" id="24C-29-60i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="heU-aC-Mwr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.71014492753625" y="886.14130434782612"/>
+        </scene>
+    </scenes>
+</document>
