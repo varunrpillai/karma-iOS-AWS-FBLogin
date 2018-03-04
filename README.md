@@ -16,7 +16,6 @@ Karma app is indeed meant to be a simple app but it has some features which make
 <img src="./screenshot/1entered.png" width="300" height="532">  
 <img src="./screenshot/6entered.png" width="300" height="532">  
 <img src="./screenshot/AddKarma.png" width="300" height="532">  
-<img src="./screenshot/1entered.png" width="300" height="532"> 
 <img src="./screenshot/edit.png" width="300" height="532">  
 <img src="./screenshot/7enteredComp.png" width="300" height="532">  
 <img src="./screenshot/sync.png" width="300" height="532">  
