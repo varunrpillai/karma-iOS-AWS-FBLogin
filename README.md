@@ -12,8 +12,10 @@ Karma app is indeed meant to be a simple app but it has some features which make
 
 ** This project does not work rightaway. Many of the configuration files have been removed for the sake of privacy. Contact me if you need some help in setting it up.
 
-## Screenshots
 
+
+## Screenshots
+**Intention here is not to build a great user experience but to achieve certain user goals with a Minimum Viable Product and with a basic UI.
 <img src="./screenshot/1entered.png" width="300" height="532">  
 <img src="./screenshot/6entered.png" width="300" height="532">  
 <img src="./screenshot/AddKarma.png" width="300" height="532">  
